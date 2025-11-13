@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Stack+Sans+Headline:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">🔐 Gerador de Senhas</h1>
+
+      <div class="output">
+        <input type="text" id="password" readonly />
+        <div class="tooltip">
+          <button id="copy">📋</button>
+
+          <span class="tooltiptext">Copiar senha</span>
+        </div>
+      </div>
+
+      <div class="controls">
+        <label for="length" class="length-label"
+          >Tamanho: <span id="length-value">12</span></label
+        >
+        <input type="range" id="length" min="4" max="32" value="12" />
+
+        <div id="password-message">
+          <span id="strength-text"></span>
+
+          <div id="strength-bar">
+            <div id="bar-fill"></div>
+          </div>
+        </div>
+
+        <label
+          ><input type="checkbox" id="uppercase" checked /> Letras
+          Maiúsculas</label
+        >
+        <label
+          ><input type="checkbox" id="lowercase" checked /> Letras
+          Minúsculas</label
+        >
+        <label><input type="checkbox" id="numbers" checked /> Números</label>
+        <label><input type="checkbox" id="symbols" checked /> Símbolos</label>
+      </div>
+
+      <div class="border-btn">
+        <button id="generate" class="btn">Gerar Senha</button>
+      </div>
+    </div>
+  </body>
+</html>
