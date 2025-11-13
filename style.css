@@ -27,7 +27,7 @@ body {
   width: 395px;
   text-align: center;
   max-width: 90%;
-  max-height: 90%;
+  /* max-height: 90%; */
 }
 
 .title {
