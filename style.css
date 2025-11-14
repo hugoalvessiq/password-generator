@@ -38,7 +38,7 @@ body {
 .tooltip {
   position: relative;
   display: inline-block;
-  cursor: pointer;  
+  cursor: pointer;
 }
 
 .tooltiptext {
@@ -181,5 +181,14 @@ body {
   transition: ease 0.2s;
   transition-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
   border: 2px solid #009ee3;
+}
 
+@media (max-width: 350px) {
+  .output {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
 }
